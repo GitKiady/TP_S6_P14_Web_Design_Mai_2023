@@ -37,5 +37,3 @@ Route::post('/insert/article/submit', [ArticleController::class, "insert"]);
 Route::get('/mety', function () {
     return view('content/mety');
 });
-
-URL::forceScheme('https');
