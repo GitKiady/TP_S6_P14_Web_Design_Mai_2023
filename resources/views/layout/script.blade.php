@@ -10,4 +10,4 @@
 
   <!-- Template Main JS File -->
   <script src="{{ url('assets/js/main.js')}}"></script>
-  
+ 
