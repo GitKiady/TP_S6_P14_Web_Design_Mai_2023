@@ -31,10 +31,10 @@ class Article extends Model
         return DB::update($sql);
     }
 
-    public static function insert($titre,$content,$categorie,$keyword,$description,$image) {
-        $sql = "INSERT INTO article(titre,contenue,idcategorie,keyword,description,image) VALUES ($titre,$content,$categorie,$keyword,$description,$image)";
+    public static function insertArticle($titre,$content,$categorie,$keyword,$description,$image) {
+        $sql = "INSERT INTO article(titre,contenue,idcategorie,keyword,description,image) VALUES ('$titre','$content',$categorie,'$keyword','$description','$image')";
 
-        return Article::insert($sql);
+        return DB::insert($sql);
     }
 
     public static function list() {
