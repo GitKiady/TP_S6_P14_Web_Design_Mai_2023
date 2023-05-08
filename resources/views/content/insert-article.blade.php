@@ -21,7 +21,7 @@
               <h5 class="card-title">Insertion nouvelle article</h5>
 
               <!-- General Form Elements -->
-              <form action="{{ asset('/insert/article/submit') }}" method="POST" enctype="multipart/form-data">
+              <form action="/insert/article/submit" method="POST" enctype="multipart/form-data">
               	@csrf
                 <div class="row mb-3">
                   <label for="inputText" class="col-sm-2 col-form-label">Titre</label>
@@ -88,7 +88,7 @@
 
 
 	@extends('../layout/script')
-	<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+	<script src="ckeditor/ckeditor.js"></script>
 	<script>
 	CKEDITOR.replace( 'editor' );
 	</script>

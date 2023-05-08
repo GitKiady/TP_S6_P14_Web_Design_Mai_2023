@@ -37,7 +37,7 @@
             </div>
 
               <!-- General Form Elements -->
-              <form action="{{ asset('/update/article/submit') }}" method="POST" enctype="multipart/form-data">
+              <form action="/update/article/submit" method="POST" enctype="multipart/form-data">
               	@csrf
                 <input type="hidden" class="form-control" name="id" value="{{$article[0]->id}}">
                 <div class="row mb-3">
