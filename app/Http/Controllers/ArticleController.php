@@ -70,7 +70,7 @@ class ArticleController extends Controller
         // end upload image
 
 
-        Article::insert($titre,$content,$categorie,$keyword,$description,$image_path);
+        Article::insertArticle($titre,$content,$categorie,$keyword,$description,$image_path);
 
         return redirect('list/article');
     }
