@@ -31,7 +31,7 @@
               		</div>
               		<div class="dataTable-container">
               			<div class="dataTable-bottom">
-		          	<div class="dataTable-info"><a href="{{ asset('/insert/article') }}">New article</a></div>
+		          	<div class="dataTable-info"><a href="/insert/article">New article</a></div>
 			          	<nav class="dataTable-pagination">
 			          		<ul class="dataTable-pagination-list"></ul>
 			          	</nav>
@@ -53,8 +53,8 @@
 	                	<td>{{ $articles[$i]->description }}</td>
 	                	<td>{{ $articles[$i]->libelle }}</td>
 	                	<td>{{ $articles[$i]->date_publication }}</td>
-	                	<td><a href="{{ asset('/update/article') }}-<?php echo $articles[$i]->id ?>">Modifier</a></td>
-	                	<td><a href="{{ asset('/delete/article') }}-<?php echo $articles[$i]->id ?>">Supprimer</a></td>
+	                	<td><a href="/update/article-<?php echo $articles[$i]->id ?>">Modifier</a></td>
+	                	<td><a href="/delete/article-<?php echo $articles[$i]->id ?>">Supprimer</a></td>
 	                </tr>
 	                <?php } ?>
                	</tbody>
